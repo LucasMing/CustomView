@@ -28,6 +28,7 @@ public class BallView extends View {
         TypedArray array = context.obtainStyledAttributes(attrs,R.styleable.ball);
         textColor = array.getColor(R.styleable.ball_textColor,Color.BLACK);
         textSize = array.getDimension(R.styleable.ball_TextSize,40);
+        //这里通过不断的更新当前位置坐标和重新绘制图形实现效果，要注意的是使用TypedArray后一定要记得recycle(). 否则会对下次调用产生影响。
         array.recycle();
     }
 

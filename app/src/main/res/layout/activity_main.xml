@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+   <!--命名空间xmlns:前缀=”http://schemas.android.com/apk/res/包名（或res-auto）”，-->
 
    <com.custom.view.widget.BallView
        android:layout_width="match_parent"
